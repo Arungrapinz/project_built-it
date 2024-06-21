@@ -1,13 +1,29 @@
-.body{
+body{
     margin:0;
     padding:0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+body{
+    background:linear-gradient( rgb(226, 185, 244),rgb(159, 68, 161));
 }
 
+.navright img{
+    width:30px;
+    height:30px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
 
+.navright{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom:20px;
+}
 #homelogo{
-    width:80px;
-    height:150px;
+    width:100px;
+    height:120px;
+
 }
 .red{
     width:100px;
@@ -22,4 +38,16 @@
     height:40px;
     border-radius: 10px;
     text-align: center;
+}
+.Products button{
+    border-radius: 15px;
+    text-align: center;
+    margin-top:10px;
+}
+.searchbar{
+    height:40px;
+    margin-left:25%;
+    padding:15px;
+    border-radius: 8px;
+  
 }
