@@ -10,7 +10,7 @@ body{
 
 .container {
     max-width:100%;
-    margin: 0 auto;
+    margin:auto;
     padding: 20px;
 }
 
@@ -133,14 +133,24 @@ button.buy-now {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
+    width:35%;
+    height:50%;
 }
 
-.specifications ul {
+.specifications td {
     list-style: none;
+    align-items: center;
     padding: 0;
     margin: 0;
 }
-
+.review-bars{
+    display:flex;
+    align-items: left;
+}
+.customer p{
+    display:flex;
+    align-items:start;
+}
 .related-products {
     background-color: #fff;
     padding: 20px;
@@ -164,17 +174,17 @@ body {
     padding: 40px 0;
     text-align: center;
 }
-.footer .customer-reviews {
+.cust .customer-reviews {
     margin-bottom: 20px;
     align-items: start;
 }
-.footer .customer-reviews .stars {
+.cust .customer-reviews .stars {
     font-size: 24px;
     color: yellow;
     display:flex;
     align-items: start;
 }
-.footer .review-bars {
+.cust .review-bars {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -182,16 +192,18 @@ body {
     margin: 0 auto;
     align-items: start;
 }
-.footer .review-bar {
+.cust .review-bar {
     display: flex;
-    align-items: center;
+    align-items:start;
     margin: 5px 0;
 }
-.footer .review-bar span {
+.cust .review-bar span {
     display: inline-block;
     width: 30px;
+    display:flex;
+    align-items: start;
 }
-.footer .review-bar div {
+.cust .review-bar div {
     height: 10px;
     background-color: orange;
     width: 100px;
@@ -205,6 +217,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
+    
 }
 .footer .footer-section div {
     flex: 1;
@@ -215,4 +228,16 @@ body {
     text-decoration: none;
     display: block;
     margin: 5px 0;
+}
+
+.footer .footer-section{
+    background-color: white;
+    color:black;
+    margin:0px;
+    border:0px;
+    width:100%;
+}
+.footer{
+    width:100%;
+    border:0px;
 }
