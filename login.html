@@ -3,46 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="css/home.css">
+    <title>Help</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Build It Logo">
-                <h1>BUILD IT</h1>
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Location</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
-        <div class="login-box">
-            <span class="close-btn">&times;</span>
-            <h2>Login</h2>
-            <form>
-                <div class="textbox">
-                    <input type="email" placeholder="Email" name="email" required>
-                    <span class="icon">@</span>
+    <nav>
+        <div class="logo">
+            <img src="/images/logo_builtit.jpg" alt="Build It Logo">
+            <h1>BUILD IT</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="form">
+        <h2>Login</h2>
+            <form action="redirect.html" method="get" enctype="multipart/form-data">
+            <div class="innerbox">
+                <div class="input">
+                    <label  class="mail">Email</label>
+                    
+                    <input type="email" name="Mail" id="Mail" placeholder="xyz@gmail.com" required>
+
                 </div>
-                <div class="textbox">
-                    <input type="password" placeholder="Password" name="password" required>
-                    <span class="icon">🔒</span>
+
+                <div class="input">
+                    <laber class="text">password</label>
+                    <input type="password" name="password" id="Comment" placeholder="Enter your password" required>
                 </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox" name="remember"> Remember me</label>
+                <div>
+                    <input type="checkbox" name="check" id="check">
+                    <label class="check">Remember me</label>
                     <a href="#">Forget Password</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="register-link">
-                    <p>Don't have an account? <a href="#">Register</a></p>
+                <div class="btn">
+                        <button type="submit">Login</button>
+                        <p>Dont't you have account?&nbsp;<a href="#">Register</a> </p> 
                 </div>
-            </form>
-        </div>
-    </div>
+            </div>
+    </form>
+   </div>
+
 </body>
 </html>
